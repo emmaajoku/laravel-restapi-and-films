@@ -5,12 +5,6 @@
     <div class="container">
         <div class="row">
             <div class="col col-login mx-auto">
-                <div class="text-center mb-6">
-                    <img
-                        src="https://tabler.github.io/tabler/demo/brand/tabler.svg"
-                        class="h-6"
-                        alt="Logo Tabler">
-                </div>
                 <form class="card" method="POST" action="{{ route('password.request') }}">
                     @csrf
                     <input type="hidden" name="token" value="{{ $token }}">
